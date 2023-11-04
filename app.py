@@ -1,15 +1,9 @@
 from flask import Flask, render_template, redirect, request
-
-# from flask_sqlalchemy import SQLAlchemy
-# from flask_login import LoginManager, UserMixin, login_user, login_required, logout_user
 import pickle
 import pandas as pd
 import numpy as np
 
-
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "secret"
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 
 
 @app.route("/")
@@ -25,6 +19,11 @@ def home():
 @app.route("/heart")
 def heart():
     return render_template("heart.html")
+
+
+@app.route("/about")
+def about():
+    return render_template("about.html")
 
 
 @app.route("/predictheart", methods=["POST"])
