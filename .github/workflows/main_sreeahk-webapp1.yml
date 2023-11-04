@@ -59,7 +59,7 @@ jobs:
         run: unzip release.zip
 
       - name: Start flask developement sever
-        run: flask run
+        run: Flask run
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
