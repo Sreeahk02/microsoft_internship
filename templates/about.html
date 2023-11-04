@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <h1 class="bg-dark text-white text-center display-1 border rounded-2 "><b>About the Machine</b></h1>
+    <div class="container">
+        <br>
+        <h3><b>Importance of this Machine</b></h3>
+        <p>Among various life-threatening diseases, heart disease has garnered a great deal of attention in medical research. The
+        diagnosis of heart disease is a challenging task, which can offer automated prediction about the heart condition of
+        patient so that further treatment can be made effective. The diagnosis of heart disease is usually based on signs,
+        symptoms and physical examination of the patient. There are several factors that increase the risk of heart disease,
+        such as smoking habit, body cholesterol level, family history of heart disease, obesity, high blood pressure, and lack
+        of physical exercise.
+        
+        A major challenge faced by health care organizations, such as hospitals and medical centers, is the provision of quality
+        services at affordable costs.1 The quality service implies diagnosing patients properly and administering effective
+        treatments. The available heart disease database consists of both numerical and categorical data. Before further
+        processing, cleaning and filtering are applied on these records in order to filter the irrelevant data from the
+        database.2 The proposed system can determine an exact hidden knowledge, ie, patterns and relationships associated with
+        heart disease from a historical heart disease database. It can also answer the complex queries for diagnosing heart
+        disease; therefore, it can be helpful to health care practitioners to make intelligent clinical decisions. Results
+        showed that the proposed system has its unique potency in realizing the objectives of the defined mining goals.
+        </p><br>
+        <h3>The Model</h3><br>
+        <P>This Machine uses the Random Forest Classifier from the scikit-learn module udner the ensemble sub module in python.
+            Ensemble learning methods are made up of a set of classifiers—e.g. decision trees—and their predictions are aggregated
+            to identify the most popular result. The most well-known ensemble methods are bagging, also known as bootstrap
+            aggregation, and boosting.
+            he random forest algorithm is an extension of the bagging method as it utilizes both bagging and feature randomness to
+            create an uncorrelated forest of decision trees. Feature randomness, also known as feature bagging or “the random
+            subspace method”(link resides outside ibm.com), generates a random subset of features, which ensures low correlation
+            among decision trees. This is a key difference between decision trees and random forests. While decision trees consider
+            all the possible feature splits, random forests only select a subset of those features.
+        </P><br>
+        <h3>how it works</h3><br>
+        <p>Random forest algorithms have three main hyperparameters, which need to be set before training. These include node size,
+        the number of trees, and the number of features sampled. From there, the random forest classifier can be used to solve
+        for regression or classification problems.
+        
+        The random forest algorithm is made up of a collection of decision trees, and each tree in the ensemble is comprised of
+        a data sample drawn from a training set with replacement, called the bootstrap sample. Of that training sample,
+        one-third of it is set aside as test data, known as the out-of-bag (oob) sample, which we’ll come back to later. Another
+        instance of randomness is then injected through feature bagging, adding more diversity to the dataset and reducing the
+        correlation among decision trees. Depending on the type of problem, the determination of the prediction will vary. For a
+        regression task, the individual decision trees will be averaged, and for a classification task, a majority vote—i.e. the
+        most frequent categorical variable—will yield the predicted class. Finally, the oob sample is then used for
+        cross-validation, finalizing that prediction.</p><br>
+        <h3>benefits of this model</h3><br>
+        <p>Reduced risk of overfitting: Decision trees run the risk of overfitting as they tend to tightly fit all the samples
+        within training data. However, when there’s a robust number of decision trees in a random forest, the classifier won’t
+        overfit the model since the averaging of uncorrelated trees lowers the overall variance and prediction error.<br>
+        Provides flexibility: Since random forest can handle both regression and classification tasks with a high degree of
+        accuracy, it is a popular method among data scientists. Feature bagging also makes the random forest classifier an
+        effective tool for estimating missing values as it maintains accuracy when a portion of the data is missing.<br>
+        Easy to determine feature importance: Random forest makes it easy to evaluate variable importance, or contribution, to
+        the model. There are a few ways to evaluate feature importance. Gini importance and mean decrease in impurity (MDI) are
+        usually used to measure how much the model’s accuracy decreases when a given variable is excluded. However, permutation
+        importance, also known as mean decrease accuracy (MDA), is another importance measure. MDA identifies the average
+        decrease in accuracy by randomly permutating the feature values in oob samples.</p><br>
+        <h3>Challenges of this model</h3><br>
+        <p>Key Challenges
+        Time-consuming process: Since random forest algorithms can handle large data sets, they can be provide more accurate
+        predictions, but can be slow to process data as they are computing data for each individual decision tree.<br>
+        Requires more resources: Since random forests process larger data sets, they’ll require more resources to store that
+        data.<br>
+        More complex: The prediction of a single decision tree is easier to interpret when compared to a forest of them.</p>
+    </div>
+</body>
+</html>
