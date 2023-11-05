@@ -41,6 +41,8 @@ jobs:
           path: |
             release.zip
             !venv/
+      # - name: deploy python server
+      #   run:  python -m flask run
 
   deploy:
     runs-on: ubuntu-latest
@@ -65,4 +67,4 @@ jobs:
         with:
           app-name: 'sreeahk-webapp1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A66FEBD232974CF4AC526BF8C3E8EB37 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1940F6C2725B442E8199312ACE24918A }}
