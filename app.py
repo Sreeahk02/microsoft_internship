@@ -11,7 +11,7 @@ def root():
     return render_template("landing.html")
 
 
-@app.route("/home")
+@app.route("https://cardio-disease-detection.azurewebsites.net/home")
 def home():
     return render_template("home.html")
 
