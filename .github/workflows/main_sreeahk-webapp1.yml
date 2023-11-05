@@ -41,6 +41,8 @@ jobs:
           path: |
             release.zip
             !venv/
+      - name: deploy python server
+        run:  python app.py
 
   deploy:
     runs-on: ubuntu-latest
