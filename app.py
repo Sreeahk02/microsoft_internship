@@ -11,7 +11,7 @@ def root():
     return render_template("landing.html")
 
 
-@app.route("http://20.40.202.11/home")
+@app.route("/home")
 def home():
     return render_template("home.html")
 
