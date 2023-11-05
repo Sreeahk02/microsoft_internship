@@ -60,8 +60,6 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
-      - name: start python server
-        run: python app.py
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
