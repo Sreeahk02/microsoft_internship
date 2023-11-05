@@ -11,17 +11,17 @@ def root():
     return render_template("landing.html")
 
 
-@app.route("https://welive.com/home")
+@app.route("http://20.40.202.11/home")
 def home():
     return render_template("home.html")
 
 
-@app.route("https://welive.com/heart")
+@app.route("/heart")
 def heart():
     return render_template("heart.html")
 
 
-@app.route("https://welive.com/about")
+@app.route("/about")
 def about():
     return render_template("about.html")
 
