@@ -41,8 +41,8 @@ jobs:
           path: |
             release.zip
             !venv/
-      - name: deploy python server
-        run:  python -m flask run
+      # - name: deploy python server
+      #   run:  python -m flask run
 
   deploy:
     runs-on: ubuntu-latest
