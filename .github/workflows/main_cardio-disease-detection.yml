@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - sreeahk-webapp1
+name: Build and deploy Python app to Azure Web App - cardio-disease-detection
 
 on:
   push:
@@ -41,8 +41,6 @@ jobs:
           path: |
             release.zip
             !venv/
-      # - name: deploy python server
-      #   run:  python -m flask run
 
   deploy:
     runs-on: ubuntu-latest
@@ -60,11 +58,10 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
-
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'sreeahk-webapp1'
+          app-name: 'cardio-disease-detection'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1940F6C2725B442E8199312ACE24918A }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A6689C859FC245E2A9A58DE70D1A54DC }}
