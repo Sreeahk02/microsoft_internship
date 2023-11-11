@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -25,7 +25,7 @@
         <h1 class="text-center display-1">HEART DISEASE PREDICTION</h1>
         <br>
         <P class="display-5"><B>Introduction</B></P>
-       <P>Heart disease describes a range of conditions that affect your heart. Diseases under the heart disease umbrella include
+       <P class="text-justify mx-5">Heart disease describes a range of conditions that affect your heart. Diseases under the heart disease umbrella include
         blood vessel diseases, such as coronary artery disease, heart rhythm problems (arrhythmias) and heart defects you’re
         born with (congenital heart defects), among others.
         
@@ -39,7 +39,7 @@
         amount of data in the healthcare industry is huge. Data mining turns the large collection of raw healthcare data into
         information that can help to make informed decisions and predictions.</P>
         <Br>
-       <P> According to a news article, heart disease proves to be the leading cause of death for both women and men. The article
+       <P class="text-justify mx-5"> According to a news article, heart disease proves to be the leading cause of death for both women and men. The article
         states the following :
         
         About 610,000 people die of heart disease in the United States every year–that’s 1 in every 4 deaths.1
@@ -59,8 +59,8 @@
         <br>
         <p class="display-5">Some ways to prevent heart diseases</p>
         <br>
-        <P>Some strategies to prevent heart diseases are as follows:</P>
-        <ul>
+        <P class="text-justify mx-5">Some strategies to prevent heart diseases are as follows:</P>
+        <ul class="text-justify mx-5">
             <li>
                 <p class="display-6">Don't smoke or use tobacco</p><br>
                 <p>One of the best things you can do for your heart is to stop smoking or using smokeless tobacco. Even if you're not a
@@ -93,6 +93,21 @@
                 </p>
             </li>
         </ul>
-        
+    <div class="fixed-bottom justify-content-end"><p class="text-end">
+        <button class="btn bg-transparent btn-outline-info border-2" id="chatbtn" onclick="openchat()">chat</button>
+        <script>
+            function openchat(){
+                if(document.getElementById('chatbotiframe').style.display=='none'){
+                    document.getElementById('chatbotiframe').style.display='inline';
+                }
+                else{
+                    document.getElementById('chatbotiframe').style.display = 'none';
+                }
+            }
+        </script>
+            <iframe class="responsive-iframe" id="chatbotiframe" height="400px" src="https://healthcare-bot-4dge5mmqom4bc.azurewebsites.net"></iframe>
+        </div>
+    </div>
+</div>
 </body>
 </html>
