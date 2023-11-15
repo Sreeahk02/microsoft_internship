@@ -29,9 +29,9 @@ def about():
 @app.route("/predictheart", methods=["POST"])
 def predictheart():
     input_features = [float(x) for x in request.form.values()]
-    print(input_features)
+    print(type(input_features))
     features_value = [np.array((input_features))]
-    print(features_value)
+    print(type(features_value))
     features_name = [
         "age",
         "trestbps",
@@ -55,6 +55,7 @@ def predictheart():
     print(x)
     model1 = pickle.load(open("heart.pkl", "rb"))
     output = model1.predict(x)
+    print(output[0])
     if output == 1:
         res_val = "a high risk of Heart Disease"
     else:
