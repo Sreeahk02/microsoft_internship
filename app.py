@@ -62,7 +62,7 @@ def predictheart():
         res_val = "a low risk of Heart Disease"
 
     return render_template(
-        "heart_result.html", prediction_text="Patient has {}".format(res_val)
+        "heart_result.html", prediction_text="Patient has {}".format(res_val),patient_info=x
     )
 
 
