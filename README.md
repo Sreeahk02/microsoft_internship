@@ -2,21 +2,21 @@
 
 ## PROBLEM:
 ---
-### Cardiovascular Diseases or CVDs, one of the most life threatening diseases, claims approximately 17.9 million lives each year. and about 74 percent of the population is heart disease burdened. The early prognosis of cardiovascular diseases can aid the patient in preventing these critical diseases by improving their lifestyles and also taking the necessary precautions and decisions to reduce the complications which can lead to improving their lifetime and the overall average life expectancy.
+ Cardiovascular Diseases or CVDs, one of the most life threatening diseases, claims approximately 17.9 million lives each year. and about 74 percent of the population is heart disease burdened. The early prognosis of cardiovascular diseases can aid the patient in preventing these critical diseases by improving their lifestyles and also taking the necessary precautions and decisions to reduce the complications which can lead to improving their lifetime and the overall average life expectancy.
 
 ## SOLUTION:
 ---
-### This website will give us information about whether a person is in danger of contracting a cardiovascular disease.It also gives the user information about cardiovascular diseases and also precautions to take in order to prevent these diseases.
+ This website will give us information about whether a person is in danger of contracting a cardiovascular disease.It also gives the user information about cardiovascular diseases and also precautions to take in order to prevent these diseases.
 
 ### data: 
 ---
-#### age:
+ age:
 age of the patient
 
-#### sex:
+ sex:
 gender of the patient(0-female,1-male)
 
-#### cp:
+ cp:
 chest pain type
 
 — Value 0: asymptomatic
@@ -27,20 +27,17 @@ chest pain type
 
 — Value 3: typical angina
 
-#### trestbps:
+trestbps:
 
 The person’s resting blood pressure (mm Hg on admission to the hospital)
 
-#### trestbps:
-The person’s resting blood pressure (mm Hg on admission to the hospital)
-
-#### chol:
+chol:
 The person’s cholesterol measurement in mg/dl
 
-#### fbs:
+fbs:
 The person’s fasting blood sugar (> 120 mg/dl, 1 = true; 0 = false)
 
-#### restecg:
+restecg:
 resting electrocardiographic results
 
 — Value 0: showing probable or definite left ventricular hypertrophy by Estes’ criteria
@@ -49,23 +46,23 @@ resting electrocardiographic results
 
 — Value 2: having ST-T wave abnormality (T wave inversions and/or ST elevation or depression of > 0.05 mV)
 
-#### thalach:
+thalach:
 The person’s maximum heart rate achieved
 
-#### exang:
+exang:
 Exercise induced angina (1 = yes; 0 = no)
 
-#### oldpeak:
+oldpeak:
 ST depression induced by exercise relative to rest (‘ST’ relates to positions on the ECG plot. See more here)
 
-#### slope:
+slope:
 the slope of the peak exercise ST segment — 0: downsloping; 1: flat; 2: upsloping
 
 0: downsloping; 1: flat; 2: upsloping
 
-#### ca: The number of major vessels (0–3)
+ca: The number of major vessels (0–3)
 
-#### thal:
+thal:
 A blood disorder called thalassemia Value 0: NULL (dropped from the dataset previously
 
 Value 1: fixed defect (no blood flow in some part of the heart)
