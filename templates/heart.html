@@ -201,7 +201,24 @@
                 </div>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button
                     type="submit" class="btn btn-primary btn-lg">Predict</button>
-
+        
+            <div class="fixed-bottom justify-content-end">
+                <p class="text-end">
+                    <button class="btn bg-transparent btn-outline-info border-2" id="chatbtn" onclick="openchat()">chat</button>
+                    <script>
+                        function openchat() {
+                            if (document.getElementById('chatbotiframe').style.display == 'none') {
+                                document.getElementById('chatbotiframe').style.display = 'inline';
+                            }
+                            else {
+                                document.getElementById('chatbotiframe').style.display = 'none';
+                            }
+                        }
+                    </script>
+                    <iframe class="responsive-iframe" id="chatbotiframe" height="400px"
+                        src="https://healthcare-bot-labokb4anruuc.azurewebsites.net/"></iframe>
+            </div>
+                  
             </div>
         </fieldset>
     </form>
